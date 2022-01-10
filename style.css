@@ -1,0 +1,658 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-apple {
+    color: rgb(211, 210, 210);
+    font-size: 18px;
+    padding: 11px;
+}
+
+.fa-apple:hover {
+    color: rgb(241, 240, 240);
+}
+
+nav {
+    background: rgb(53, 53, 53);
+    height: 44px;
+    font-size: 11.5px;
+    display: flex;
+    padding: 0 22px;
+    justify-content: space-between;
+}
+
+nav ul {
+    text-align: center;
+}
+
+
+nav ul li {
+    display: inline-block;
+    letter-spacing: 0.5px;
+    color: rgb(211, 210, 210);
+    cursor: pointer;
+    padding: 15px 80px;
+}
+
+nav ul li:hover {
+    color: rgb(241, 240, 240);
+}
+
+.fa-search {
+    color: rgb(211, 210, 210);
+    font-size: 14px;
+    padding: 15px;
+}
+
+.fa-search:hover {
+    color: rgb(241, 240, 240);
+}
+
+.page-1 {
+    background-image: url(page-1-bg.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 575px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.page-1-text {
+    padding-top: 50px;
+}
+
+.page-1-header {
+    font-size: 52px;
+    font-weight: 550;
+    color: rgb(26, 25, 25);
+}
+
+.page-1-subtext-1 {
+    font-size: 27px;
+    font-weight: 400;
+    color: rgb(26, 25, 25);
+}
+
+.learn-more-1{
+    margin-top: 15px;
+    color: #06c;
+}
+
+.page-1-subtext-2 {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #06c;
+}
+
+.page-1-subtext-2::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #06c;
+    display: block;
+}
+
+.page-1-subtext-2:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #06c;
+    display: block;
+}
+
+.fa-greater-than {
+    margin-left: 5px;
+}
+
+.page-2 {
+    margin-top: 10px;
+    background-image: url(page-2-bg.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 575px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.page-2-text {
+    padding-top: 50px;
+}
+
+.page-2-header {
+    font-size: 52px;
+    font-weight: 550;
+    color: white;
+}
+
+.page-2-subtext-1 {
+    font-size: 27px;
+    font-weight: 400;
+    color: #fec2eb;
+}
+
+.learn-more-2{
+    margin-top: 15px;
+    color: #2997ff;
+}
+
+.page-2-subtext-2 {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #2997ff;
+}
+
+.page-2-subtext-2::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #2997ff;
+    display: block;
+}
+
+.page-2-subtext-2:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #2997ff;
+    display: block;
+}
+
+.fa-greater-than {
+    margin-left: 5px;
+}
+
+.page-3 {
+    background-image: url(page-3-bg.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 575px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.page-3-text {
+    padding-top: 50px;
+}
+
+.page-3-header {
+    display:inline-flex ;
+}
+
+.ipad {
+    font-size: 52px;
+    font-weight: 550;
+    color: rgb(26, 25, 25);
+    padding-right: 3px;
+}
+
+.mini {
+    font-family: 'pacifico', cursive;
+    font-size: 55px;
+    font-weight: 350;
+    margin-top: -22px;
+    background: linear-gradient(90deg, rgb(255, 169, 70), rgb(255, 79, 255), rgb(98, 98, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-3-subtext-1 {
+    font-size: 27px;
+    font-weight: 400;
+    color: rgb(26, 25, 25);
+}
+
+.learn-more-3{
+    margin-top: 15px;
+    color: #06c;
+}
+
+.page-3-subtext-2 {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #06c;
+}
+
+.page-3-subtext-2::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #06c;
+    display: block;
+}
+
+.page-3-subtext-2:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #06c;
+    display: block;
+}
+
+.page-4-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px;
+    grid-gap: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.a {
+    height: 575px;
+    background-image: url(page-4-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.b {
+    background-image: url(page-5-bg.jpg);
+    background-position: center;
+    height: 575px;
+    background-size: cover;
+}
+
+.c {
+    background-image: url(page-6-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 575px;
+}
+
+.d {
+    background-image: url(page-7-bg.jpg);
+    background-position: center;
+    height: 575px;
+    background-size: cover;
+}
+
+.page-4-text {
+    padding-top: 50px;
+}
+
+.page-4-header {
+    font-size: 40px;
+    font-weight: 550;
+    color: rgb(26, 25, 25);
+    padding-bottom: 3px;
+}
+
+.page-4-subtext-1 {
+    font-size: 21px;
+    font-weight: 400;
+    color: rgb(26, 25, 25);
+}
+
+.learn-more-4{
+    margin-top: 15px;
+    color: #06c;
+}
+
+.page-4-subtext-2 {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #06c;
+}
+
+.page-4-subtext-2::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #06c;
+    display: block;
+}
+
+.page-4-subtext-2:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #06c;
+    display: block;
+}
+
+.fa-greater-than {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.page-5-text {
+    padding-top: 400px;
+}
+
+.page-5-header-1 {
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(26, 25, 25);
+}
+
+.page-5-header-2 {
+    font-size: 40px;
+    font-weight: 550;
+    color: rgb(26, 25, 25);
+    padding-bottom: 3px;
+}
+
+.page-5-subtext-1 {
+    font-size: 21px;
+    font-weight: 400;
+    color: rgb(26, 25, 25);
+}
+
+.learn-more-5{
+    margin-top: 15px;
+    color: #06c;
+}
+
+.page-5-subtext-2 {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #06c;
+}
+
+.page-5-subtext-2::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #06c;
+    display: block;
+}
+
+.page-5-subtext-2:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #06c;
+    display: block;
+}
+
+.fa-greater-than {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.footer {
+    background-color: rgb(245, 245, 245);
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    padding-bottom: 25px;
+}
+
+.footer-col h3{
+    font-size: 13px;
+    color: rgb(88, 88, 88);
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.footer-col ul li {
+    line-height: 2;
+    font-size: 13px;
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-final {
+    padding: 0 15px;
+    font-size: 13px;
+    color: rgb(122, 122, 122);
+    letter-spacing: 0.2px;
+}
+
+.footer-final-row-1 {
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.f-1 {
+    padding-right: 3px;
+    color: #06c;
+    cursor: pointer;
+}
+
+.breaker {
+    height: 1px;
+    max-width: 100%;
+    background-color: rgb(122, 122, 122);
+}
+
+.footer-final-row-2 {
+    display: flex;
+    padding-top: 8px;
+}
+
+.c-1 {
+    padding-right: 20px;
+}
+
+.t-1 {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.s-1 {
+    padding-right: 480px;
+    cursor: pointer;
+}
+
+.n-2 {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 833px) 
+{
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        left: 50%;
+        margin-left: -20px;
+        position: absolute;
+        display: block;
+        text-align: center;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .page-1-header {
+        font-size: 35px;
+    }
+
+    .page-1-subtext-1 {
+        font-size: 21px;
+    }
+
+    .page-1-subtext-2 {
+        font-size: 15px;
+    }
+
+    .page-1 {
+        background-image: url(page-1.1-bg.jpg);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 450px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .page-2-header {
+        font-size: 35px;
+        padding-top: 145px;
+    }
+
+    .page-2-subtext-1 {
+        font-size: 21px;
+    }
+
+    .page-2-subtext-2 {
+        font-size: 15px;
+    }
+
+    .page-2 {
+        background-image: url(page-2.1-bg.jpg);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 450px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .ipad {
+        font-size: 35px;
+    }
+
+    .mini {
+        font-size: 37px;
+        margin-top: -15px;
+    }
+
+    .page-3-header {
+        font-size: 35px;
+    }
+
+    .page-3-subtext-1 {
+        font-size: 21px;
+    }
+
+    .page-3-subtext-2 {
+        font-size: 15px;
+    }
+
+    .page-3 {
+        margin-top: 10px;
+        background-image: url(page-3.1-bg.jpg);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 450px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .page-4-grid {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        padding: 0px;
+        grid-gap: 0px;
+    }
+
+    .a {
+        margin-top: 10px;
+        height: 450px;
+        background-image: url(page-4-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .b {
+        margin-top: 10px;
+    }
+
+    .c {
+        margin-top: 10px;
+    }
+
+    .d {
+        margin-top: 10px;
+    }
+
+    .page-4-text {
+        padding-top: 30px;
+    }
+
+    .page-4-header {
+        font-size: 35px;
+    }
+
+    .page-4-subtext-1 {
+        font-size: 21px;
+    }
+
+    .page-4-subtext-2 {
+        font-size: 15px;
+    }
+
+    .footer-col {
+        display: none;
+    }
+
+    .footer {
+        margin-top: 10px;
+    }
+
+    .breaker {
+        display: none;
+    }
+
+    .footer-final-row-1 {
+        padding-bottom: 8px;
+        margin-bottom: 7px;
+    }
+
+    .footer-final-row-2 {
+        display: inline-block;
+    }
+
+    .t-1 {
+        padding-top: 8px;
+    }
+    
+    .n-2 {
+        padding-top: 15px;
+    }
+
+    .s-1 {
+        padding-right: 0px;
+        padding-top: 8px;
+    }
+
+    .adapt {
+        display:inline-flex ;
+    }
+
+}
